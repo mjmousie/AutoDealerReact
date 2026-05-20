@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="public/favicon.png" />
+
+    <!-- Pre-warm Firebase connections -->
+    <link rel="preconnect" href="https://firestore.googleapis.com" />
+    <link rel="preconnect" href="https://firebase.googleapis.com" />
+    <link rel="dns-prefetch" href="https://firestore.googleapis.com" />
+    <link rel="dns-prefetch" href="https://storage.googleapis.com" />
+
+    <!-- Preconnect hints for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload critical font subset -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap"
+    />
+
+    <!-- Preload hero image -->
+    <link rel="preload" as="image" href="/og-image.jpg" />
+
+    <!-- Load fonts with media trick to prevent render blocking -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <!-- Fallback for no-JS -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+      />
+    </noscript>
+
+    <!--
+      Title & meta are managed per-page by PageMeta.jsx (React Helmet Async).
+      This is the minimal shell — all JS/CSS injected by Vite.
+    -->
+    <title>Auto Nation</title>
+
+    <!-- Critical CSS — inlined to prevent flash of unstyled content before main CSS loads -->
+    <style>
+      *,*::before,*::after{box-sizing:border-box}
+      html{scroll-behavior:smooth;scrollbar-gutter:stable}
+      body{margin:0;font-family:'DM Sans',system-ui,sans-serif;background:#f9fafb;color:#111827;-webkit-font-smoothing:antialiased}
+      #root{min-height:100vh}
+      .skeleton{background:linear-gradient(90deg,#f3f4f6 25%,#e5e7eb 50%,#f3f4f6 75%);background-size:200% 100%;animation:shimmer 1.5s infinite linear}
+      @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+      :focus-visible{outline:2px solid #dc2626;outline-offset:3px;border-radius:4px}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Vite injects the bundled script here at build time -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
