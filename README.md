@@ -10,15 +10,19 @@ A mobile-first, high-performance used car dealership website built with React, V
 
 ### Homepage — Hero with Scroll Animation
 The hero section features a scroll-driven SVG car animation on desktop and an infinite vertical inventory carousel showcasing live inventory.
+![Homepage Hero](screenshots/Homepage.png)
 
 ### Inventory Page
 Filterable grid of available vehicles with dynamic make filter, condition badges, and spec pills.
+![Homepage Hero](screenshots/Inventory-Page.png)
 
 ### Vehicle Detail Page
 Full image gallery with lightbox, swipe gestures, spec breakdown, and test drive request form.
+![Homepage Hero](screenshots/Car-Details.png)
 
 ### Admin Dashboard
 Mobile-friendly dashboard with Inventory, Leads, and Marketing tabs — designed for lot-side use on a phone.
+![Homepage Hero](screenshots/Admin-Dashboard.png)
 
 ---
 
