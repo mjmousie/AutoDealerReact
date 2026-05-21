@@ -2,7 +2,7 @@
 
 A mobile-first, high-performance used car dealership website built with React, Vite, Tailwind CSS, and Firebase. Designed as a production-ready template that can be deployed for any dealership by editing a single configuration file.
 
-**[Live Demo](https://autodealer-dev.web.app)** · Built for Auto Nation — Youngstown, OH
+**[Live Demo](https://autodealer-dev.web.app)**
 
 ---
 
